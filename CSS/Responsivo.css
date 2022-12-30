@@ -1,0 +1,467 @@
+/* Estilo Para Tablet */
+
+@media only screen and (min-width: 700px) and (max-width: 1150px) {
+
+    .container {
+	width: 768px;
+    }
+
+    /* Introdução */
+
+    .introdução {
+        padding: 60px 0;
+        padding-bottom: 0px;
+    }
+    
+    .apresentação h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .apresentação h1:after {
+        width: 115px;
+    }
+    
+    .apresentação p {
+        font-size: 17px;
+    }
+    
+    .personagem {
+        width: 350px;
+        margin-right: 3px;
+    }
+
+    /* Sobre Mim */
+
+    .sobre-mim {
+        padding: 10px 0;
+    }
+
+    .sobre-dados {
+        width: 285px;
+    }
+
+    .sobre-texto {
+        width: 450px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 30px;
+    }
+
+    .sobre-texto h1:after {
+        width: 100px;
+    }
+
+    .sobre-texto p {
+        font-size: 17px;
+    }
+
+    .sobre-contato ul li {
+        padding-left: 10px;
+    }
+
+    .sobre-contato ul li h2 {
+        font-size: 16px;
+    }
+
+    .sobre-contato ul li p {
+        font-size: 15px;
+    }
+
+   /* Projetos */
+
+    .projetos {
+        padding-top: 70px;
+    }
+
+    .projetos-intro {
+        font-size: 30px;
+    }
+
+    .projetos-intro::after {
+        width: 75px;
+    }
+
+    /* Projetos - Concluidos */
+
+    .projetos-concluidos {
+        margin: 20px auto;
+    }
+
+    .projetos-concluidos ul li {
+        width: 230px;
+    }
+
+    .projetos-concluidos ul li h2 {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .projetos-concluidos ul li p {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .projetos-concluidos ul li img {
+        width: 190px;
+        height: 120px;
+        opacity: 0.7;
+        text-align: right;
+    }
+    
+    .projetos-concluidos ul li button {
+        padding: 8px 35px;
+        margin-left: -65px;
+    }
+
+    /* Serviços */
+
+    .serviços-intro {
+        font-size: 30px;
+    }
+
+    .serviços-intro::after {
+        width: 75px;
+    }
+
+    .meus-serviços ul li {
+        width: 232px;
+    }
+
+    /* Minhas Skills */
+
+    .skills-intro h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .skills-intro h1::after{
+        content: "";
+        display: block;
+        width: 120px;
+        height: 3px;
+        background: #b91717;
+        margin: 2px auto;
+    }
+
+    /* Progresso */
+
+    .meu-progresso {
+        width: 350px;
+        margin-left: 25px;
+    }
+
+    .meu-progresso-2 {
+        width: 350px;
+        margin-left: 25px;
+    }
+
+}
+
+/* Estilo Para Smartphone */
+
+@media only screen and (max-width: 787px) {
+
+    .container {
+        width: 300px;
+    }
+    
+    header.scroll {
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu .logo {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+        position: relative;
+        top: 10px;
+        z-index: 1;
+    }
+      
+    #menu-mobile a {
+        text-decoration: none;
+        color: #f9f9f9;
+        transition: color 0.3s ease;
+    }
+
+    #menu-mobile a:hover {
+        color: #d82000;
+    }
+
+    #menu-mobile input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    #menu-mobile span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #f9f9f9;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+      
+    #menu-mobile span:first-child {
+        transform-origin: 0% 0%;
+    }
+      
+    #menu-mobile span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+     
+    #menu-mobile input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #f9f9f9;
+    }
+     
+    #menu-mobile input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+     
+    #menu-mobile input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+     
+    #menu-mb {
+        position: absolute;
+        width: 220px;
+        height: 350px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        border-bottom-right-radius: 5px;
+        padding-top: 125px;
+        background: linear-gradient(to right, #630000, #290f07);
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+      
+    #menu-mb li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+     
+    #menu-mobile input:checked ~ ul {
+        transform: none;
+    }
+
+    /* Introdução */
+
+    .introdução {
+        height: 650px;
+        padding: 25px 0;
+    }
+
+    .apresentação-geral {
+        padding: 0px 0;
+    }
+
+    .apresentação h1 {
+        font-size: 30px;
+        max-width: 250px;
+        line-height: 35px;
+        margin: 0 auto;
+    }
+
+    .apresentação p {
+        max-width: 270px;
+        white-space: pre-line;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    @keyframes typing {
+        from {
+          width: 1
+        }
+    }
+
+    .personagem {
+        width: 300px;
+        float: none;
+        margin: 0px auto;
+    }
+
+    .call {
+        padding-left: 50px;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Sobre Mim */
+
+    .sobre-mim {
+        text-align: center;
+        margin-top: -100px;
+        height: 650px;
+    }
+
+    .sobre-dados {
+        display: none;
+    }
+
+    .sobre-texto {
+        max-width: 300px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .sobre-texto h1:after {
+        width: 100px;
+    }
+
+    .sobre-texto p {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .sobre-contato {
+        width: 300px;
+        padding: 30px 0;
+    }
+
+    .sobre-contato ul li {
+        padding-left: 0px;
+        display: inline-table;
+    }
+
+    /* Projetos */
+
+    .projetos {
+        padding: 0px 0;
+    }
+
+    .projetos-intro {
+        font-size: 30px;
+    }
+
+    .projetos-intro::after {
+        width: 75px;
+    }
+
+    /* Projetos - Concluidos */
+
+    .projetos-concluidos {
+        margin: 30px 0;
+    }
+
+    .projetos-concluidos ul li {
+        width: 250px;
+        margin: 10px;
+    }
+    
+    .projetos-concluidos ul li h2 {
+        font-size: 18px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .projetos-concluidos ul li p {
+        font-size: 14px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .projetos-concluidos ul li img {
+        width: 200px;
+        height: 115px;
+        opacity: 0.7;
+        text-align: right;
+    }
+
+    .projetos-concluidos ul li button {
+        padding: 7px 45px;
+        margin: 0px;
+    
+    }
+
+    /* Serviços */
+
+    .serviços-intro {
+        margin: 30px 0;
+        font-size: 30px;
+    }
+
+    .serviços-intro::after {
+        width: 75px;
+    }
+
+    .meus-serviços ul li {
+        width: 245px;
+        margin: 10px auto;
+    }
+
+    .meus-serviços h2 {
+        width: 135px;
+    }
+
+    /* Minhas Skills */
+
+
+    .skills {
+        margin: 0px auto;
+    }
+
+    .minhas-skills {
+        height: 380px;
+        margin-top: 30px;
+    }
+
+    .skills-intro h1 {
+        font-size: 30px;
+    }
+
+    .skills-intro h1::after{
+        width: 130px;
+    }
+
+    /* Progresso */
+
+    .progresso-barra {
+        height: 300px;
+    }
+
+    .meu-progresso {
+        width: 270px;
+        margin-left: 15px;
+    }
+
+
+    .meu-progresso-2 {
+        width: 270px;
+        margin-left: 15px;
+    }
+}

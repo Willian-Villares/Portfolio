@@ -1,0 +1,623 @@
+/* Estilo Gerais */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    scrollbar-color: #830c0c;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212121;
+    -webkit-box-shadow: inset 0 0 5px #333333;
+    box-shadow: inset 0 0 5px #333333;
+    border: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #830c0c;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #f9f9f9;
+}
+
+p {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+body {
+    background: linear-gradient(94.3deg,  #000000 0%, #1d1d1d 80%) fixed;
+}
+
+.container {
+	width: 100%;
+    max-width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 27px;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+}
+
+header.scroll {
+    background: linear-gradient(94.3deg,  #000000 0%, #212121 50%);
+    -webkit-box-shadow: 0 2px 5px #0000004f;
+    box-shadow: 0 2px 5px #0000004f;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    gap: 20px;
+}
+
+.menu a:hover {
+    color: #d82000;
+    transition: 0.3s;
+}
+
+.menu ul li:first-letter {
+    color: #b91717;
+}
+
+.menu .logo {
+    color: #f9f9f9;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+/* Introdução */
+
+.introdução {
+    padding: 60px 0;
+}
+
+.apresentação-geral {
+    padding: 50px 0;
+}
+
+.apresentação h1 {
+    color: #f9f9f9;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 42px;
+    max-width: 300px;
+}
+
+.apresentação h1:after {
+    content: "";
+    display: block;
+    background: #f9f9f9;
+    width: 130px;
+    height: 3px;
+    margin: 2px;
+    margin-top: 10px;
+}
+
+.apresentação p {
+    color: #828282;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 10px;
+    font-family: monospace;
+}
+
+.apresentação span {
+    color: #b91717;
+}
+
+.personagem {
+    width: 412px;
+    float: right;
+    margin-top: -220px;
+    margin-right: 37px;
+}
+
+.call {
+    width: 250px;
+    height: 100px;
+}
+
+.call a {
+    background: linear-gradient(to right, #a11111 0%, #6e181b  51%, #b81610  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f9f9f9;            
+    display: block;
+}
+
+.btn {
+    border: 3px linear-gradient(to right, #a11111 0%, #6e181b  51%, #b81610  100%) solid;
+    padding: 10px 30px;
+    letter-spacing: .1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 10px;
+    float: left;
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #f9f9f9;
+}
+
+/* Sobre Mim */
+
+.sobre-dados {
+    width: 350px;
+}
+
+.sobre-texto {
+    width: 500px;
+    float: right;
+}
+
+.sobre-texto h1 {
+    color: #b91717;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.sobre-texto h1:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #b91717;
+    margin: 5px auto;
+}
+
+.sobre-texto p {
+    color: #f9f9f9;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center    
+}
+
+.sobre-contato {
+    padding: 17px 0;  
+    padding-bottom: 0px;
+}
+
+.sobre-contato ul li {
+    display: inline-block;
+    padding-left: 15px;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.sobre-contato ul li:hover{
+    transform: scale(1.07);
+}
+
+.sobre-contato ul li h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sobre-contato ul li p {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+/* Projetos */
+
+.projetos {
+    padding: 30px 0;
+}
+
+.projetos-intro {
+    color: #b91717;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projetos-intro::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #b91717;
+    margin: 5px auto;
+}
+
+/* Projetos - Concluidos */
+
+.projetos-concluidos {
+	margin: 20px;
+	text-align: center;
+}
+
+.projetos-concluidos ul li {
+	width: 300px;
+    display: inline-block;
+	padding: 20px;
+	position: relative;
+	margin: 10px;
+	background: #262a2b;
+	border: 1px solid #252727;
+    border-radius: 3px;
+	text-align: center;
+}
+
+.projetos-concluidos ul li img {
+    width: 237px;
+    height: 130px;
+	opacity: 0.7;
+    text-align: right;
+    background: linear-gradient(94.3deg,  #000000 0%, #212121 50%);
+    border: 1px solid #333333;
+}
+
+.projetos-concluidos ul li h2 {
+	font-size: 20px;
+	color: #f9f9f9;
+    font-family: 'Frank Ruhl Libre', serif;
+    padding-top: 5px;
+	margin-bottom: 5px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.projetos-concluidos ul li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.projetos-concluidos ul li button {
+	background: transparent;
+	border: 1px solid #cacaca;
+	padding: 10px 50px;
+	color: #cacaca;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(7px);
+	cursor: pointer;
+	overflow: hidden;
+    margin-left: -80px;
+}
+
+.projetos-concluidos ul li button:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 120%;
+	background: #b9b9b9;
+	top: 0;
+	opacity: 0;
+	left: -140px;
+	border-radius: 0 20px 20px 0;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+.projetos-concluidos ul li button:hover {
+	color: #262a2b;
+}
+
+.projetos-concluidos ul li button:hover:before {
+	left: 0;
+	opacity: 1;
+}
+
+.projetos-concluidos ul li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(1deg, 1deg);
+}
+
+.projetos-concluidos ul li:nth-child(1):before {
+    background: linear-gradient(to right, #74191c, #f9f9f9);
+}
+
+.projetos-concluidos ul li:nth-child(2):before {
+	background: #74191c;
+}
+
+.projetos-concluidos ul li:nth-child(3):before {
+    background: linear-gradient(to right, #f9f9f9, #74191c);
+}
+
+#Divs {
+    display: none;
+    animation: fromTop .6s backwards;
+    padding-top: 12px;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-15px)
+    }  
+}
+
+.btn-mostrar {
+    text-align: center;
+}
+
+.mostrar-mais {
+    padding: 10px 30px;
+    letter-spacing: .1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    border: none;
+    background: linear-gradient(to right, #a11111 0%, #6e181b  51%, #b81610  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f9f9f9;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.mostrar-mais:hover {
+    background-position: right center;
+    color: #f9f9f9;
+}
+
+/* Serviços */
+
+.serviços {
+    padding: 0px 0;
+}
+
+.serviços-intro {
+    color: #b91717;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.serviços-intro::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #b91717;
+    margin: 5px auto;
+}
+
+.meus-serviços {
+    text-align: center;
+}
+
+.meus-serviços ul li {
+	width: 300px;
+    display: inline-block;
+	padding: 20px;
+	margin: 20px 10px 0;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: center;
+    border-radius: 3px;
+    border-bottom: 4px solid #860707;
+    text-align: center;
+}
+
+.meus-serviços p {
+    width: 145px;
+    margin: 0 auto;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 19px;
+    line-height: 20px;   
+}
+
+.meus-serviços lord-icon {
+    filter: drop-shadow(0px 0px 10px #bb0404e2);
+}
+
+/* Minhas Skills */
+
+.minhas-skills {
+    margin-top: 50px;
+    height: 250px;
+}
+
+.skills-intro h1 {
+    color: #b91717;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+}
+
+.skills-intro h1::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: #b91717;
+    margin: 2px auto;
+}
+
+/* Progresso */
+
+.skills {
+    margin-top: 60px;
+}
+
+.meu-progresso {
+    background: rgba(255,255,255,0.1);
+    border-radius: 100px;
+    align-items: center;
+    display: inline-flex;
+    height: 25px;
+    width: 400px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 113px;
+}
+
+.meu-progresso-2 {
+    background: rgba(255,255,255,0.1);
+    border-radius: 100px;
+    align-items: center;
+    display: inline-flex;
+    height: 25px;
+    width: 400px;
+    margin-top: 50px;
+    padding: 0 10px;
+    float: left;
+    margin-left: 113px;
+}
+
+.progresso-valor {
+    opacity: 0;
+}
+ 
+.progresso-valor-start {
+    opacity: 1;
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b7b7b7;
+    border-radius: 100px;
+    background: #fff;
+    height: 15px;
+    width: 0;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+  
+.progresso-valor-2 {
+    opacity: 0;
+}
+
+.progresso-valor-2-start {
+    opacity: 1;
+    animation: load2 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b7b7b7;
+    border-radius: 100px;
+    background: #fff;
+    height: 15px;
+    width: 0;
+}
+  
+@keyframes load2 {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+  
+.progresso-valor-3 {
+    opacity: 0;
+}
+
+.progresso-valor-3-start {
+    opacity: 1;
+    animation: load3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b7b7b7;
+    border-radius: 100px;
+    background: #fff;
+    height: 15px;
+    width: 0;
+}
+
+@keyframes load3 {
+    0% { width: 0; }
+    100% { width: 45%; }
+}
+
+.progresso-valor-4 {
+    opacity: 0;
+}
+
+.progresso-valor-4-start {
+    opacity: 1;
+    animation: load4 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #b7b7b7;
+    border-radius: 100px;
+    background: #fff;
+    height: 15px;
+    width: 0;
+}
+
+@keyframes load4 {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    background: linear-gradient(94.3deg,  #000000 0%, #212121 50%);
+    height: 40px;
+}
+
+.footer p {
+    color: #f9f9f9;
+    padding-top: 12px;
+    font-size: 18px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.footer a {
+    color: #b81610;
+}
+
+/* Animações */
+
+.typing-animation {
+    width: 43ch;
+    animation: typing 1.6s steps(70), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    border-color: #791a1d;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
